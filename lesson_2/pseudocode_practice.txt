@@ -1,0 +1,94 @@
+PSEUDOCODE PRACTICE EXERCISES
+
+1. a function that returns the sum of two numbers:
+
+	START
+
+	SET addition function with two numberical parameters
+		SET sum = first parameter + second parameter
+		return sum
+
+	GET first number
+	GET second number
+
+	call the function and pass first number and second number in as arguements
+
+
+	END
+
+2. a function that takes a list of strings, and returns a string that is all those strings concatenated together
+
+START
+
+SET list of strings
+SET concatinated string
+SET iterator = 0
+
+
+WHILE iterator < lenght of string list
+	concatinated string = concatinated string + string in list at iterator
+	iterator += 1
+
+END
+
+3. a function that takes a list of integers, and returns a new list with every other element from the original list, starting with the first element. For instance: 
+every_other([1,4,7,2,5]) # => [1,7,5]
+
+START
+
+SET list of integers
+SET empty list named every_other
+SET iterator = 0
+
+WHILE iterator < length of list of integers
+	SET every_other = every_other + list of integers(iterator)
+	iterator += 2
+
+END
+
+4. a function that determines the index of the 3rd occurrence of a given character in a string. For instance, if the given character is 'x' and the string is 'axbxcdxex', the function should return 6 (the index of the 3rd 'x'). If the given character does not occur at least 3 times, return None.
+
+START
+
+SET searched_char
+SET string
+SET index = 0
+SET iterator = 0
+
+WHILE index < 3
+	if character at index = searched character
+		index += 1
+	iterator += 1
+
+RETURN iterator
+
+END
+
+5. a function that takes two lists of numbers and returns the result of merging the lists. The elements of the first list should become the elements at the even indexes of the returned list, while the elements of the second list should become the elements at the odd indexes. For instance: 
+merge([1, 2, 3], [4, 5, 6]) # => [1, 4, 2, 5, 3, 6]
+
+START
+
+	SET list1
+	SET list2
+	SET combined_list = []
+	SET iterator
+
+WHILE iterator is < length of list1 or length of list 2
+	IF iterator is odd AND list1 has number at index of iterator
+		combined_list = combined_list + list1 at index of iterator
+	IF iterator is even AND list2 has number at index of iterator
+		combined_list = combined_list + list2 at index of iterator
+		
+RETURN combined_list
+
+END
+
+
+
+
+
+
+
+
+
