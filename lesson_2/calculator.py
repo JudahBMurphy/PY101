@@ -13,7 +13,7 @@ def prompt(message):
 
 def invalid_number(user_input):
     try:
-        int(user_input)
+        float(user_input)
     except ValueError:
         return True
     return False
@@ -46,13 +46,13 @@ while True:
     #Perform the operation on the two numbers
     match operand:
         case '1':
-            result = int(first_number) + int(second_number)
+            result = float(first_number) + float(second_number)
         case '2':
-            result = int(first_number) - int(second_number)
+            result = float(first_number) - float(second_number)
         case '3':
-            result = int(first_number) * int(second_number)
+            result = float(first_number) * float(second_number)
         case '4':
-            result = int(first_number) // int(second_number)
+            result = float(first_number) / float(second_number)
         case _:
             prompt(messages('bad_input', LANGUAGE))
 
